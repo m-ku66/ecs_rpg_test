@@ -24,7 +24,7 @@ export interface SpellComponent extends Component {
   type: "spell"; // Type identifier
   name: string; // Spell name
   description: string; // Spell description
-  manaCost: number; // Mana cost of the spell
+  magiaCost: number; // Mana cost of the spell
   castingTime: number; // Time it takes to cast the spell
   basePower: number; // Base power of the spell
   // Add more spell attributes here
