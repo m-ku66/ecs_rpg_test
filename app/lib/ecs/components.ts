@@ -1,11 +1,12 @@
 import { Component } from "./types";
 import { Affinity, Personality, StatusEffects } from "../game_types/types";
 
-// Player component - contains all player-specific attributes
+// Player component - contains all player-specific attributes. The player is a sorcery tutor
 export interface PlayerComponent extends Component {
   type: "player"; // Type identifier
   userName: string; // Player's username
   isAi: boolean; // Is this player controlled by the AI?
+  students: MageComponent[]; // List of students the player has
   // Add more player attributes here
 }
 
